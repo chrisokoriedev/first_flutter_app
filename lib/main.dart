@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'homepage.dart';
+import 'widget_class.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,12 +17,10 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: const Color(0xff92b4ec),
         appBarTheme: const AppBarTheme(backgroundColor: Colors.red),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const WidgetClass(),
     );
   }
 }
-

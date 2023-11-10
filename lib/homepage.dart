@@ -37,11 +37,31 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Text(
-              'You have pushed the button this many times:',
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 30),
+            // ElevatedButton(onPressed: onPressed, child: child)
+
+
+            GestureDetector(
+              onTap: () {
+                print('hello');
+              },
+              child: Container(
+                alignment: Alignment.center,
+                width: 300,
+                height: 100,
+                decoration: BoxDecoration(
+                    color: Colors.red,
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(color: Colors.black, width: 2)),
+                child: const Text(
+                  'You have pushed the button this many times:',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 30),
+                ),
+              ),
             ),
+
+
+
             const SizedBox(height: 20),
             Text(
               '$_counter',
